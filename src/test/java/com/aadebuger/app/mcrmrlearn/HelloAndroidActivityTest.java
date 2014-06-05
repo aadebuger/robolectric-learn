@@ -13,6 +13,7 @@ public class HelloAndroidActivityTest {
   @org.junit.Test
   public void titleIsCorrect() throws Exception {
     Activity activity = Robolectric.setupActivity(HelloAndroidActivity.class);
+    System.out.println("title="+activity.getTitle().toString());
     assertTrue(activity.getTitle().toString().equals("Deckard"));
   }
   @org.junit.Test
